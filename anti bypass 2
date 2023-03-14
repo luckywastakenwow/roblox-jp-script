@@ -1,0 +1,14 @@
+local registry = getregistry
+
+for i,v in next, registry do
+    if type(v) == 'function' then
+        local funcinfo = getinfo(v)
+        if funcinfo.name == 'kick'  then
+            hookfunction(funcinfo.func,function(...) return nil end
+            print('hook sucessful!')
+        end
+    end
+end
+local StealthMode = true -- If game has an anticheat that checks the logs
+
+local Indicator
