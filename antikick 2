@@ -31,7 +31,7 @@ end)
 if getgenv().SendNotifications == true then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Etronix Hub",
-        Text = "Anti-Kick script loaded",
+        Text = "Anti-Kick 2 Enabled!",
         Icon = "rbxassetid://6238537240",
         Duration = 5,
     })
