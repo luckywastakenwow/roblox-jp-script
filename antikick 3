@@ -1,3 +1,6 @@
+--by luckii--
+
+--script--
 wait(1)
 print("Checking if Anti-Kick 3 is already running.")
 wait(2)
