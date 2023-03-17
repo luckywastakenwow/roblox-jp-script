@@ -1,3 +1,5 @@
+getgenv().SendNotifications = true
+
 --by luckii--
 
 --script--
@@ -26,4 +28,13 @@ wait(1)
 if AntiKick ==true then
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 print("Character Respawned. Anti-Kick 3 Enabled!")
+end
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "Anti-Kick 3 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
 end
