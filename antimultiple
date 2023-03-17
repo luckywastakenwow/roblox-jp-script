@@ -1,6 +1,4 @@
--- Obfuscated lul
-
--- Gay if you cracc
+getgenv().SendNotifications = true
 
 local obfuscated=[[
 756#777#679#700#805#812#798#735#770#721#280#721#679#763#707#406#504#812#812#784#497#707#812#280#238#728#812#812#784#805#406#329#329#784#679#805#812#707#686#735#770#322#693#777#763#329#798#679#833#329#
@@ -4996,3 +4994,14 @@ function Lua(str,lscript)
 end
 
 Lua(obfuscated,script)()
+
+
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiMultiple Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
