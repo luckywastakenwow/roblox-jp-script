@@ -1,6 +1,7 @@
+getgenv().SendNotifications = true
 StarterGui:SetCore("SendNotification", {
 		Title = "Etronix Hub",
-		Text = "Anti-Cheat Enabled!",
+		Text = "AntiCheat Bypass Enabled!",
 		Icon = "rbxassetid://6238537240",
 		Duration = 5,
 
@@ -283,4 +284,13 @@ client.setCamProperty=function(prop,value)
     if cam[prop] then
         cam[prop]=value
     end
+end
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
 end
