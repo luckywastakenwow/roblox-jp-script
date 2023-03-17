@@ -1,3 +1,5 @@
+getgenv().SendNotifications = true
+
 local UI = loadstring(game:HttpGet('https://raw.githubusercontent.com/antisteal/antisteal-main/master/ui.lua', true))()
 
 local Players = game:GetService'Players'
@@ -359,3 +361,12 @@ UserInputService.InputBegan:Connect(function(InputObject)
         end
     end
 end)
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "Anti-Steal/Anti-Logger Loaded!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
