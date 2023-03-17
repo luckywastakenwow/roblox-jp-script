@@ -1,3 +1,5 @@
+getgenv().SendNotifications = true
+
 local Player = game:GetService'Players'.LocalPlayer;
 local UIS = game:GetService'UserInputService';
 UIS.InputBegan:connect(function(UserInput)
@@ -15,3 +17,12 @@ UIS.InputEnded:connect(function(UserInput)
                 _G.Running = false
         end
 end)
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 3 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
