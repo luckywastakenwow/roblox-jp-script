@@ -12,7 +12,3 @@ if getgenv().SendNotifications == true then
         Duration = 5,
     })
 end
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
