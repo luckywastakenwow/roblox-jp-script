@@ -1,3 +1,5 @@
+getgenv().SendNotifications = true 
+
 local playerscripts = game:GetService'Players'.LocalPlayer.PlayerScripts
 
 local script1 = playerscripts.LocalScript
@@ -15,3 +17,12 @@ end
 
 script1:Destroy()
 script2:Destroy()
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 4 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
