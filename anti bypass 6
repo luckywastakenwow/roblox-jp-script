@@ -1,0 +1,16 @@
+getgenv().SendNotifications = true 
+
+local player = game:GetService('Players').LocalPlayer
+local character = player.Character
+character.Parent = nil
+character.HumanoidRootPart:Destroy()
+character.Parent = workspace
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 6 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
