@@ -8,9 +8,12 @@ for i,v in next, registry do
         if funcinfo.name == 'kick'  then
             hookfunction(funcinfo.func,function(...) return nil end
             print('hook sucessful!')
+        else
+            print('hook failed')
         end
     end
 end
+
 local StealthMode = true -- If game has an anticheat that checks the logs
 
 local Indicator
