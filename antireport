@@ -1,3 +1,18 @@
+getgenv().SendNotifications = true
+
 setfflag("AbuseReportScreenshotPercentage", 0)
 
 setfflag("DFFlagAbuseReportScreenshot", "False")
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 2 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
