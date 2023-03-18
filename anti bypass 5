@@ -1,3 +1,5 @@
+getgenv().SendNotifications = true 
+
 local function DisableSignal(signal, name)
     local successes = true
     for i, connection in next, getconnections(signal) do
@@ -25,4 +27,13 @@ if DisableSignal(localscriptSignal, 'localscript') then
 end
 if DisableSignal(localscript2Signal, 'localscript2') then
     localscript2:Destroy()
+end
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 5 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
 end
