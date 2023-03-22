@@ -1,0 +1,20 @@
+getgenv().SendNotifications = true 
+
+local scall = syn_secure_call;
+
+local Module = game:GetService("ReplicatedStorage").Modules.Network;
+local Script = game:GetService("Players").PlayerScripts.PlayerScript;
+local Network = require(Module);
+
+local FireServer = scall(Metatable.__index, Script, Network, "FireServer");
+
+scall(FireServer, Script, FireServer, "Chat", "1234567890qweryuiopasjklzxvbnm", nil):
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Etronix Hub",
+        Text = "AntiCheat Bypass 7 Enabled!",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
