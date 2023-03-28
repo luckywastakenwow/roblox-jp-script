@@ -206,12 +206,12 @@ end)
 --OTHER--
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Console Spammer")
-Section:NewToggle("Console Spammer", "Infinitely sends messages to the console, may increase lag", function(state)
+Section:NewToggle("Game Crasher", "Spams the console to crash your game", function(state)
     if state then
-        print("Console Spammer Enabled")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/consolespammer"))()
+        print("Game Crasher")
+        https://github.com/luckywastakenwow/roblox-jp-script/blob/main/gamecrasher
     else
-        print("Console Spammer Disabled")
+        print("Game Crasher")
     end
 end)
 --LOCAL PLAYER--
