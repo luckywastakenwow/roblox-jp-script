@@ -209,7 +209,7 @@ local Section = Tab:NewSection("Console Spammer")
 Section:NewToggle("Game Crasher", "Spams the console to crash your game", function(state)
     if state then
         print("Game Crasher")
-        loadstring(game:HttpGet("https://github.com/luckywastakenwow/roblox-jp-script/blob/main/gamecrasher"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/gamecrasher"))()
     else
         print("Game Crasher")
     end
