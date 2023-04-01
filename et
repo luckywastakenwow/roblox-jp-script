@@ -205,7 +205,7 @@ end)
 
 --OTHER--
 local Tab = Window:NewTab("Other")
-local Section = Tab:NewSection("Console Spammer")
+local Section = Tab:NewSection("Game Crasher")
 Section:NewToggle("Game Crasher", "Spams the console to crash your game", function(state)
     if state then
         print("Game Crasher")
