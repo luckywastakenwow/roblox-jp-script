@@ -223,7 +223,7 @@ end)
 Section:NewSlider("Jump Power", "Modifies how high or low you can jump", 500, 55, function(p) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = p
 end)
-Section:NewButton("InfJump", "Jump In The Air", function()
+Section:NewButton("Inf Jump", "Jump In The Air", function()
     print("InfJump Enabled")
     local InfiniteJumpEnabled = true
     game:GetService("UserInputService").JumpRequest:connect(function()
@@ -231,6 +231,9 @@ Section:NewButton("InfJump", "Jump In The Air", function()
             game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
         end
     end)
+end)
+Section:NewButton("Inf Health", "Gives you infinite health", function()
+    game.Workspace.LocalPlayer.Humanoid.MaxHealth= math.Huge
 end)
 
 --UNIVERSAL--
