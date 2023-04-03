@@ -1,3 +1,9 @@
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/whitelists/main/whitelist"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+print(HWIDTable)
+for i,v in pairs(HWIDTable) do
+    if v == HWID then
+        print("Hardware ID Correct! Script loading...")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Etronix Hub", "BloodTheme")
 local StealthMode = true -- If game has an anticheat that checks the logs
@@ -305,3 +311,6 @@ local Section = Tab:NewSection("Keybinds")
 Section:NewKeybind("GUI Keybind Toggle", "Sets the keybind for toggling the GUI", Enum.KeyCode.RightControl, function()
     Library:ToggleUI()
 end)
+
+    end
+end
