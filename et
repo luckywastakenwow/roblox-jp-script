@@ -7,6 +7,14 @@ local Indicator
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
+Section:NewButton("Anti AFK", "Stops disconnections after 20 minutes", function(state)
+    if state then
+        print("Anti AFK Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20afk"))()
+    else
+        print("Anti AFK Disabled")
+    end
+end
 Section:NewToggle("AntiCheat Bypass", "Bypasses/stops the AntiCheat", function(state)
     if state then
         print("AntiCheat Bypass Enabled")
@@ -208,10 +216,19 @@ local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Game Crasher")
 Section:NewToggle("Game Crasher", "Spams the console to crash your game", function(state)
     if state then
-        print("Game Crasher")
+        print("Game Crasher Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/gamecrasher"))()
     else
-        print("Game Crasher")
+        print("Game Crasher Disabled")
+    end
+end)
+local Section = Tab:NewSection("Ping Tracker")
+Section:NewButton("Ping Tracker", "Shows your ping", function(state)
+    if state then
+        print("Ping Tracker Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/ping%20tracker"))()
+    else
+        print("Ping Tracker Disabled")
     end
 end)
 --LOCAL PLAYER--
