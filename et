@@ -13,14 +13,6 @@ local Indicator
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
-Section:NewButton("Anti AFK", "Stops disconnections after 20 minutes", function(state)
-    if state then
-        print("Anti AFK Enabled")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20afk"))()
-    else
-        print("Anti AFK Disabled")
-    end
-end
 Section:NewToggle("AntiCheat Bypass", "Bypasses/stops the AntiCheat", function(state)
     if state then
         print("AntiCheat Bypass Enabled")
