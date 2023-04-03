@@ -4,6 +4,8 @@ print(HWIDTable)
 for i,v in pairs(HWIDTable) do
     if v == HWID then
         print("Hardware ID Correct! Script loading...")
+        else
+        print("Hardware ID Incorrect. We have detected that you have pirated Etronix Hub premium. Piracy is a serious crime!")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Etronix Hub", "BloodTheme")
 local StealthMode = true -- If game has an anticheat that checks the logs
