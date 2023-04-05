@@ -7,7 +7,7 @@ local whitelist = {
 }
 for i,v in pairs(whitelist) do
     if player.name == v then 
-        print("Hardware ID Correct! Script loading...")
+        print("Username correct! Script loading...")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Etronix Hub", "BloodTheme")
 local StealthMode = true -- If game has an anticheat that checks the logs
