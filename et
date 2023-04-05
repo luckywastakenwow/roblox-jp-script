@@ -1,8 +1,12 @@
-local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/whitelists/main/whitelist"))()
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-print(HWIDTable)
-for i,v in pairs(HWIDTable) do
-    if v == HWID then
+local pl = game.Players.LocalPlayer
+local whitelist = {
+    "pokemon34643"
+    "KareemLeon"
+    "lce_Blue"
+    "colden190"
+}
+for i,v in pairs(whitelist) do
+    if player.name == v then 
         print("Hardware ID Correct! Script loading...")
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Etronix Hub", "BloodTheme")
