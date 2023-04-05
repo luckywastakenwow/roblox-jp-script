@@ -208,7 +208,18 @@ while true do
 end
 end
 end)
-
+--GAMES--
+local Tab = Window:NewTab("Games")
+local Section = Tab:NewSection("Bedwars")
+Section:NewToggle("Speed", "Makes you faster", function(state)
+    if state then
+        print("Speed Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/speed%20up"))()
+    else
+        print("Speed Disabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/no%20speed"))()
+    end
+end)
 --OTHER--
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Game Crasher")
