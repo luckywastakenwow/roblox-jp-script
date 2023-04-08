@@ -111,13 +111,22 @@ Section:NewToggle("Anti-Logger", "Prevents most bans by chat", function(state)
         print("Anti-Logger Disabled")
     end
 end)
-Section:NewToggle("Anti-Report (SYNAPSE X ONLY)", "Stops Roblox Screenshot System, Syn X only")
+Section:NewToggle("Anti-Report (SYNAPSE X ONLY)", "Stops Roblox Screenshot System, Syn X only", function(state)
     if state then
         print("Anti-Report Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/antireport"))()
     else
         print("Anti-Report Disabled")
     end
+end)
+Section:NewToggle("Anti-Ban", "Rejoins after getting banned, only works on a select few executors", function(state)
+    if state then
+        print("Anti-Ban Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20ban")()
+    else
+        print("Anti-Ban Disabled")
+    end
+end)
 local Section = Tab:NewSection("Anti-Steal/Anti-Logger (RECOMMENDED)")
 Section:NewButton("Anti-Steal/Anti-Logger", "Stops chat logging", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/antisteal"))()
