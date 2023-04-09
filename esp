@@ -1,0 +1,33 @@
+local highlight = Instance.new("Highlight")
+local Players = game:GetService("Players"):GetChildren()
+local RunService = game:GetService("RunService")
+highlight.Name = "Highlight"
+
+
+
+for i,v in pairs(Players) do
+    repeat wait() until player.Character
+    local highlightClone = highlight:Clone()
+    highlightClone.Adornee = player.Character
+    highlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+    highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+    highlightClone.Name = "Highlight"
+end)
+
+
+game.Players.PlayerRemoving:Connect(function(playerRemoved)
+    playerRemoved.Character:FindFirstChild("HumanoidRootPart").Highlight.Destroy()
+end)
+
+
+RunService.RenderStopped:Connect(function()
+    for i,v in pairs(Players) do
+        repeat wait() until v.Character
+        local highlightClone = highlight.Clone()
+        highlightClone.Adornee = v.Character
+        highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
+        highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+        highlightClone.Name = "Highlight"
+        task.wait(0.5)
+    end
+end)
