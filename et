@@ -4,8 +4,6 @@ local StealthMode = true -- If game has an anticheat that checks the logs
 
 local Indicator
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/whitelists/main/anti%20http%20spy"))()
-
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
