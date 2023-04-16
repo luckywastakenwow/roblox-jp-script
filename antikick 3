@@ -20,7 +20,7 @@ end
 wait(2.5)
 AntiKick = game.Workspace.Anti_Kicklul.Value
 if AntiKick == true then
-print("Anti-Kick 3 has loaded and is now running. Took [8] Seconds!")
+print("Anti-Kick 3 has loaded and is now running.")
 elseif AntiKick == false then
 print("Anti-Kick 3 failed to run! Run Script again")
 end
