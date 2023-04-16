@@ -243,7 +243,7 @@ Section:NewButton("Ping Tracker", "Shows your ping", function(state)
         print("Ping Tracker Disabled")
     end
 end)
-local Section:Tab:NewSection("ESP")
+local Section = Tab:NewSection("ESP")
 Section:NewButton("ESP (Not Working)", "Highlights all players", function(state)
     if state then
         print("ESP Enabled")
