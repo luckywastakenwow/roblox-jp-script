@@ -1,10 +1,11 @@
 spamchat = true
 
-while true do
-wait(1)
+while wait do
+    wait(1)
 local args = {
     [1] = "Etronix On Top",
     [2] = "All"
 }
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
