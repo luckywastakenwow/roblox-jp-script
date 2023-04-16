@@ -122,7 +122,7 @@ end)
 Section:NewToggle("Anti-Ban", "Rejoins after getting banned, only works on a select few executors", function(state)
     if state then
         print("Anti-Ban Enabled")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20ban")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20ban"))()
     else
         print("Anti-Ban Disabled")
     end
