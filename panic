@@ -1,0 +1,5 @@
+local player = game.Players.LocalPlayer
+
+game.Players.PlayerRemoving:Connect(function(player)
+    player:Kick("Panic button pressed.")
+end)
