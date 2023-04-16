@@ -1,0 +1,158 @@
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/MfEbKw56"))()
+
+local Window = OrionLib:MakeWindow({Name = "Etronix Hub | Premium", HidePremium = false, SaveConfig = true, ConfigFolder = "EtronixTest"})
+
+OrionLib:MakeNotification({
+	Name = "Etronix Hub",
+	Content = "Welcome To Etronix Hub Premium.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--TABS--
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Local Player"
+})
+Tab:AddSlider({
+	Name = "Walk Speed",
+	Min = 16,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walk Speed",
+	Callback = function(Value)
+		print(Value)
+        _G.HackedWalkSpeed = Value
+
+        local Plrs = game:GetService("Players")
+ 
+        local MyPlr = Plrs.LocalPlayer
+        local MyChar = MyPlr.Character
+
+        if MyChar then
+        local Hum = MyChar.Humanoid
+        Hum.Changed:connect(function()
+        Hum.WalkSpeed = _G.HackedWalkSpeed
+        end)
+        Hum.WalkSpeed = _G.HackedWalkSpeed
+        end
+
+
+        MyPlr.CharacterAdded:connect(function(Char)
+        MyChar = Char
+        repeat wait() until Char:FindFirstChild("Humanoid")
+        local Hum = Char.Humanoid
+        Hum .Changed:connect(function()
+        Hum.WalkSpeed = _G.HackedWalkSpeed
+        end)
+        Hum.WalkSpeed = _G.HackedWalkSpeed
+        end)
+    end    
+})
+Tab:AddSlider({
+	Name = "Jump Power",
+	Min = 55,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump Power",
+	Callback = function(Value)
+		print(Value)
+        _G.HackedWalkSpeed = Value
+
+        local Plrs = game:GetService("Players")
+ 
+        local MyPlr = Plrs.LocalPlayer
+        local MyChar = MyPlr.Character
+
+        if MyChar then
+        local Hum = MyChar.Humanoid
+        Hum.Changed:connect(function()
+        Hum.JumpPower = _G.HackedJumpPower
+        end)
+        Hum.JumpPower = _G.HackedJumpPower
+        end
+
+
+        MyPlr.CharacterAdded:connect(function(Char)
+        MyChar = Char
+        repeat wait() until Char:FindFirstChild("Humanoid")
+        local Hum = Char.Humanoid
+        Hum.Changed:connect(function()
+        Hum.JumpPower = _G.HackedJumpPower
+        end)
+        Hum.JumpPower = _G.HackedJumpPower
+        end)
+    end    
+})
+Tab:AddButton({
+	Name = "Inf Jump",
+	Callback = function()
+      		print("Inf Jump Enabled")
+            _G.infinjump = true
+
+            local Player = game:GetService("Players").LocalPlayer
+            local Mouse = Player:GetMouse()
+            Mouse.KeyDown:connect(function(k)
+                if _G.infinjump then
+                    if k:byte() == 32 then
+                        Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+                        Humanoid:ChangeState("Jumping")
+                        wait(0.1)
+                        Humanoid:ChangeState("Seated")
+                    end
+                end
+            end)
+            while true do
+                _G.infinjump = Value
+                wait(0.001)
+            end
+            local Player = game:GetService("Players").LocalPlayer
+            local Mouse = Player:GetMouse()
+            Mouse.KeyDown:connect(function(k)
+                k = k:lower()
+                if k == "f" then
+                    if _G.infinjump == true then
+                        _G.infinjump = false
+                    else
+                        _G.infinjump = true
+                    end
+                end
+            end)
+  	end    
+})
+--TABS--
+local Tab = Window:MakeTab({
+	Name = "Anti Cheats",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddToggle({
+	Name = "Anti Cheat Bundle (All 5 Anti Cheats | Non P.)",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+        if Value then
+            OrionLib:MakeNotification({
+	            Name = "Etronix Hub",
+	            Content = "Anti-Cheat Bundle Enabled.",
+	            Image = "rbxassetid://4483345998",
+	            Time = 5
+            })
+        else
+            OrionLib:MakeNotification({
+	            Name = "Etronix Hub",
+	            Content = "Anti-Cheat Bundle Disabled.",
+	            Image = "rbxassetid://4483345998",
+	            Time = 5
+            })
+        end 
+	end    
+})
