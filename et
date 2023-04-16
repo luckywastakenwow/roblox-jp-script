@@ -244,12 +244,20 @@ Section:NewButton("Ping Tracker", "Shows your ping", function(state)
     end
 end)
 local Section:Tab:NewSection("ESP")
-Section:NewButton("ESP", "Highlights all players", function(state)
+Section:NewButton("ESP (Not Working)", "Highlights all players", function(state)
     if state then
         print("ESP Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/esp"))()
     else
         print("ESP Disabled")
+    end
+end)
+Section:NewToggle("Fullbright", "Makes your game brighter", function(state)
+    if state then
+        print("Fullbright Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/fullbright"))()
+    else
+        print("Fullbright Disabled")
     end
 end)
 --LOCAL PLAYER--
