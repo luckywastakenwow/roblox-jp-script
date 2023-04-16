@@ -252,6 +252,7 @@ Section:NewButton("ESP (Not Working)", "Highlights all players", function(state)
         print("ESP Disabled")
     end
 end)
+local Section = Tab:NewSection("Fullbright")
 Section:NewToggle("Fullbright", "Makes your game brighter", function(state)
     if state then
         print("Fullbright Enabled")
