@@ -15,7 +15,7 @@ Section:NewToggle("AntiCheat Bypass", "Bypasses/stops the AntiCheat", function(s
         print("AntiCheat Bypass Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 2", "Hooks the AntiCcheat", function(state)
+Section:NewToggle("AntiCheat Bypass 2", "Hooks the AntiCheat", function(state)
     if state then
         print("AntiCheat Bypass 2 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%202"))()
