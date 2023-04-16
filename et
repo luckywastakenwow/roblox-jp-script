@@ -223,6 +223,14 @@ Section:NewToggle("Speed", "Makes you faster", function(state)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/no%20speed"))()
     end
 end)
+Section:NewButton("Chat Spam", "Spams the chat", function(state)
+   if state then
+       print("Chat Spam Enabled"
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/chat%20spam")()
+   else
+       print("Chat Spam Disabled")
+   end
+end)
 --OTHER--
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Game Crasher")
