@@ -1,0 +1,6 @@
+local args = {
+    [1] = "Etronix On Top | I don't care about the fact that I'm cheating, I care about the fact that you died in a block game.",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
