@@ -146,10 +146,12 @@ local Section = Tab:NewSection("God Mode")
 Section:NewToggle("God Mode", "Gives you inf health, but may kick you", function(state)
     if state then
         print("God Mode Enabled")
-        game.Players.LocalPlayer.Character.Humanoid:Remove()
-Instance.new('Humanoid', game.Players.LocalPlayer.Character)
-game:GetService("Workspace")[game.Players.LocalPlayer.Name]:FindFirstChildOfClass(
-'Humanoid').HipHeight = 2
+        while true do
+				game:GetService("RunService").Stepped:wait()
+				game.Players.LocalPlayer.Humanoid.MaxHealth = true
+				game.Players.LocalPlayer.Humanoid.Health = true
+				MaxHealth = 1000
+				Health = 1000
     else
         print("God Mode Disabled")
     end
@@ -279,6 +281,13 @@ game.Workspace.LocalPlayer.Humanoid.MaxHealth= math.Huge
 
 ff.Parent = plrchar
 ff.Visible = false
+
+while true do
+		game:GetService("RunService").Stepped:wait()
+		game.Players.LocalPlayer.Humanoid.MaxHealth = true
+		game.Players.LocalPlayer.Humanoid.Health = true
+		MaxHealth = 1000
+		Health = 1000
 end)
 
 --UNIVERSAL--
