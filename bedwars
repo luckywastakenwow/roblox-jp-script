@@ -1,0 +1,23 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Etronix Hub | Bedwars", "BloodTheme") 
+
+--MAIN--
+local Tab = Window:NewTab("Games")
+local Section = Tab:NewSection("Bedwars")
+Section:NewToggle("Speed", "Makes you faster", function(state)
+    if state then
+        print("Speed Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/speed%20up"))()
+    else
+        print("Speed Disabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/no%20speed"))()
+    end
+end)
+Section:NewButton("Chat Spam", "Spams the chat", function(state)
+    if state then
+        print("Chat Spam Enabled"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/chat%20spam")()
+    else
+        print("Chat Spam Disabled")
+    end
+end)
