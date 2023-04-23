@@ -1,0 +1,8 @@
+local banneduser = "Enter Player Username"
+
+while true do
+for _, plr in pairs(players:GetPlayers()) do
+game.Players:ReportAbuse(game.Players.banneduser,"Bullying", "Harrasing me, and other people. It really hurts my feelings, Saying sexual words and being innapropriate..")
+wait(0.3)
+end
+end
