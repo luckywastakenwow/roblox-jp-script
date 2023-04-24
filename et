@@ -147,11 +147,9 @@ Section:NewToggle("God Mode", "Gives you inf health, but may kick you", function
     if state then
         print("God Mode Enabled")
         while true do
-				game:GetService("RunService").Stepped:wait()
-				game.Players.LocalPlayer.Humanoid.MaxHealth = true
-				game.Players.LocalPlayer.Humanoid.Health = true
-				MaxHealth = 10000
-				Health = 10000
+        game:GetService("RunService").Stepped:wait()
+        game.Players.LocalPlayer.Humanoid.MaxHealth = math.Huge
+        game.Players.LocalPlayer.Humanoid.Health = math.Huge
     else
         print("God Mode Disabled")
     end
