@@ -216,7 +216,7 @@ end)
 --GAMES--
 local Tab = Window:NewTab("Games")
 local Section = Tab:NewSection("Bedwars")
-Section:NewButton("Chat Spam", "Spams the chat", function(state)
+Section:NewButton("Load Bedwars GUI", "Bedwars GUI", function(state)
   if state then
         print("Bedwars GUI Loaded")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/bedwars"))()
