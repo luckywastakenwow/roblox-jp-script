@@ -1,0 +1,28 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window   = OrionLib:MakeWindow({Name = "Etronix Hub | Ban Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab      = Window:MakeTab({
+    Name        = "Ban Script",
+    Icon        = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+Tab:AddParagraph("Warning","Please keep in mind that it is not recommended to use a main account when using this script. The script is potentially detectable and can lead to your account being banned from the game, banned from roblox, or account termination.")
+
+local Section = Tab:AddSection({
+    Name = "Ban"
+})
+Tab:AddTextbox({
+    Name          = "Victim Username",
+    Default       = "Type victim username here",
+    TextDisappear = false,
+    Callback      = function(Value)
+        print(Value)
+        local banneduser = Value
+
+        while true do
+        for _, plr in pairs(players:GetPlayers()) do
+        game.Players:ReportAbuse(game.Players.banneduser,"Bullying", "Harrasing me, and other people. It really hurts my feelings, Saying sexual words and being innapropriate..")
+        wait(0.3)
+            end
+        end
+    end   
+})
