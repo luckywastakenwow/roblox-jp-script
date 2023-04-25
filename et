@@ -142,18 +142,6 @@ end)
 Section:NewDropdown("Aimpart", "DropdownInf", {"Head", "Torso", "Left Leg", "Right Leg", "Left Arm", "Right Arm"}, function(currentOption)
     print(currentOption)
 end)
-local Section = Tab:NewSection("God Mode")
-Section:NewToggle("God Mode", "Gives you inf health, but may kick you", function(state)
-    if state then
-        print("God Mode Enabled")
-        while true do
-        game:GetService("RunService").Stepped:wait()
-        game.Players.LocalPlayer.Humanoid.MaxHealth = math.Huge
-        game.Players.LocalPlayer.Humanoid.Health = math.Huge
-    else
-        print("God Mode Disabled")
-    end
-end)
 local Section = Tab:NewSection("Noclip")
 Section:NewToggle("Noclip",  "Walk through walls", function(state)
     if state then
@@ -221,7 +209,7 @@ Section:NewButton("Load Bedwars GUI", "Bedwars GUI", function(state)
     else
         print("Bedwars GUI Closed")
     end
-end
+end)
 --OTHER--
 local Tab = Window:NewTab("Other")
 local Section = Tab:NewSection("Game Crasher")
