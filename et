@@ -218,6 +218,8 @@ Section:NewButton("Load Bedwars GUI", "Bedwars GUI", function(state)
   if state then
         print("Bedwars GUI Loaded")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/bedwars"))()
+    else
+        print("Bedwars GUI Closed")
     end
 end
 --OTHER--
@@ -245,6 +247,8 @@ Section:NewToggle("Ban Player", "Attempts to ban a player, around 5% chance of a
     if state then
         print("Ban GUI Loaded")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/ban"))()
+    else
+        print("Ban GUI Closed")
     end
 end)
 --LOCAL PLAYER--
