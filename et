@@ -274,7 +274,7 @@ while true do
 		game.Players.LocalPlayer.Humanoid.Health = true
 		MaxHealth = 10000
 		Health = 10000
-end)
+end
 
 --UNIVERSAL--
 local Tab = Window:NewTab("Universal")
