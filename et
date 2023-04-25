@@ -231,7 +231,7 @@ Section:NewToggle("Fullbright", "Makes your game brighter", function(state)
     end
 end)
 local Section = Tab:NewSection("Ban Player")
-Section:NewToggle("Ban Player", "Attempts to ban a player, around 5% chance of actually working", function(state)
+Section:NewButton("Ban Player", "Attempts to ban a player, around 5% chance of actually working", function(state)
     if state then
         print("Ban GUI Loaded")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/ban"))()
