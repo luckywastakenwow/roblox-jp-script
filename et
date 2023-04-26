@@ -257,25 +257,6 @@ Section:NewButton("Inf Jump", "Jump In The Air", function()
         end
     end)
 end)
-Section:NewButton("Inf Health", "Gives you infinite health", function()
-local player = game:GetService("Players").LocalPlayer
-local char = player.Character
-local ff = Instance.new("ForceField")
-
-char:WaitForChild("Humanoid").Health = math.Huge
-game.Workspace.LocalPlayer.Humanoid.MaxHealth= math.Huge
-
-ff.Parent = plrchar
-ff.Visible = false
-
-while true do
-		game:GetService("RunService").Stepped:wait()
-		game.Players.LocalPlayer.Humanoid.MaxHealth = true
-		game.Players.LocalPlayer.Humanoid.Health = true
-		MaxHealth = 10000
-		Health = 10000
-end
-
 --UNIVERSAL--
 local Tab = Window:NewTab("Universal")
 local Section = Tab:NewSection("Cmd-X Admin")
@@ -335,5 +316,4 @@ local Tab = Window:NewTab("Settings")
 local Section = Tab:NewSection("Keybinds")
 Section:NewKeybind("GUI Keybind Toggle", "Sets the keybind for toggling the GUI", Enum.KeyCode.RightControl, function()
     Library:ToggleUI()
-    end)
 end)
