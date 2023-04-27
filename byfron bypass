@@ -1,0 +1,36 @@
+-- user --
+local Client = game.Players.LocalPlayer
+
+-- finds the executor --
+local Executives = {“Synapse-X”, “JJSploit”, “ScriptWare”, “Delta5”, “Delta”, “Nihon”, “Dansploit”, “Krnl”, “Xcite”, “Etrothimix”, “Kiwi-X”, “Kiwi-X_v3”, “Nitrogen”, “Comet_3”, “OxygenU”, “Oxygen”, “Etched_Font”}
+
+-- checks executor state change --
+local Executor = game.LocalPlayer.Client.workspace.RobloxClientScripts(state(“changed”)).Executives
+
+-- checks if you executed a script --
+local ScriptState = game.LocalPlayer.Client.workspace.RobloxClientScripts(state(“changed”))
+local ScriptInjected = Executor.ScriptState.”changes?”
+
+
+-- checks whenevr you inject --
+while true do
+     -- when you inject --
+     if ScriptState then
+          -- attempts to delete byfron --
+          Executor.ScriptState(“delete function” .. ScriptInjected .. “”)
+     end
+     wait(0.001)
+     runScript(ScriptInjected).recordData(false)
+     -- if byfron was removed --
+     if ScriptState == true then
+          -- byfron was removed --
+          print(“Byfron Bypassed”)
+     else
+          -- byfron was detected --
+          print(“Byfron Detected Execution”)
+
+          -- cancels injection --
+          ScriptState.true(not ScriptState)
+          Inject(ScriptState.Executives)(delete:remove)
+     end
+end
