@@ -16,7 +16,7 @@ end)
 Section:NewButton("Chat Spam", "Spams the chat", function(state)
     if state then
         print("Chat Spam Enabled")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/chat%20spam")()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/chat%20spam"))()
     else
         print("Chat Spam Disabled")
     end
