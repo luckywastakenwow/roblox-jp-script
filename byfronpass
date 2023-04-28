@@ -12,7 +12,7 @@ local ScriptState = game.LocalPlayer.Client.workspace.RobloxClientScripts(state(
 local ScriptInjected = Executor.ScriptState()."changes"
 
 
--- checks whenevr you inject --
+-- checks whenever you inject --
 while true do
      -- when you inject --
      if ScriptState then
