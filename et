@@ -213,7 +213,7 @@ local Section = Tab:NewSection("Rejoin")
 Section:NewButton("Rejoin", "Rejoins your current game", function(state)
     if state then
         print("Rejoining...")
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/rejoin"))()
     else
         print("Still in game")
     end
