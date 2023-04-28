@@ -207,6 +207,17 @@ while true do
 end
 end
 end)
+--CURRENT GAME--
+local Tab = Window:NewTab("Current Game")
+local Section = Tab:NewSection("Rejoin")
+Section:NewButton("Rejoin", "Rejoins your current game", function(state)
+    if state then
+        print("Rejoining...")
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+    else
+        print("Still in game")
+    end
+end)
 --GAMES--
 local Tab = Window:NewTab("Games")
 local Section = Tab:NewSection("Bedwars")
