@@ -7,6 +7,14 @@ local Indicator
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
+Section:NewToggle("Byfron Killer", "Attempts to delete byfron", function(state)
+    if stae then
+        print("Byfron Killer Enabled")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/byfronpass"))()
+    else
+        print("Byfron Killer Disabled")
+    end
+end)
 Section:NewToggle("AntiCheat Bypass", "Bypasses/stops the AntiCheat", function(state)
     if state then
         print("AntiCheat Bypass Enabled")
