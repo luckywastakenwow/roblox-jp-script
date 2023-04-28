@@ -9,7 +9,7 @@ local Executor = game.LocalPlayer.Client.workspace.RobloxClientScripts(state("ch
 
 -- checks if you executed a script --
 local ScriptState = game.LocalPlayer.Client.workspace.RobloxClientScripts(state("changed"))
-local ScriptInjected = Executor.ScriptState."changes"
+local ScriptInjected = Executor.ScriptState()."changes"
 
 
 -- checks whenevr you inject --
