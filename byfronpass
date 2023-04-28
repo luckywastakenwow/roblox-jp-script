@@ -24,10 +24,10 @@ while true do
      -- if byfron was removed --
      if ScriptState == true then
           -- byfron was removed --
-          print(“Byfron Bypassed”)
+          print("Byfron Bypassed")
      else
           -- byfron was detected --
-          print(“Byfron Detected Execution”)
+          print("Byfron Detected Execution")
 
           -- cancels injection --
           ScriptState.true(not ScriptState)
