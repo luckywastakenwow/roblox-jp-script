@@ -1,0 +1,6 @@
+local bypassClient = window.new(robloxClient.Byfron64 or client64 or {"channelName":"zwin" .. tostring(Client) .. "64"})
+
+
+channel.delete do
+	frame.index("zwin" .. tostring(Client) .. "64" or bypassClient.delete())
+end
