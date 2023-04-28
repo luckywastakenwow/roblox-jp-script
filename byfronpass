@@ -2,14 +2,14 @@
 local Client = game.Players.LocalPlayer
 
 -- finds the executor --
-local Executives = {“Synapse-X”, “JJSploit”, “ScriptWare”, “Delta5”, “Delta”, “Nihon”, “Dansploit”, “Krnl”, “Xcite”, “Etrothimix”, “Kiwi-X”, “Kiwi-X_v3”, “Nitrogen”, “Comet_3”, “OxygenU”, “Oxygen”, “Etched_Font”}
+local Executives = {"Synapse-X", "JJSploit", "ScriptWare", "Delta5", "Delta", "Nihon", "Dansploit", "Krnl", "Xcite", "Etrothimix", "Kiwi-X", "Kiwi-X_v3", "Nitrogen", "Comet_3", "OxygenU", "Oxygen", "Etched_Font"}
 
 -- checks executor state change --
-local Executor = game.LocalPlayer.Client.workspace.RobloxClientScripts(state(“changed”)).Executives
+local Executor = game.LocalPlayer.Client.workspace.RobloxClientScripts(state("changed")).Executives
 
 -- checks if you executed a script --
-local ScriptState = game.LocalPlayer.Client.workspace.RobloxClientScripts(state(“changed”))
-local ScriptInjected = Executor.ScriptState.”changes?”
+local ScriptState = game.LocalPlayer.Client.workspace.RobloxClientScripts(state("changed"))
+local ScriptInjected = Executor.ScriptState."changes?"
 
 
 -- checks whenevr you inject --
