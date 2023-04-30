@@ -229,12 +229,30 @@ end)
 --GAMES--
 local Tab = Window:NewTab("Games")
 local Section = Tab:NewSection("Bedwars")
-Section:NewButton("Load Bedwars GUI", "Bedwars GUI", function(state)
-  if state then
-        print("Bedwars GUI Loaded")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/bedwars"))()
+Section:NewToggle("Speed", "Makes you faster", function(state)
+    if state then
+        print("Speed Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/speed%20up"))()
     else
-        print("Bedwars GUI Closed")
+        print("Speed Disabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/no%20speed"))()
+    end
+end)
+Section:NewButton("Chat Spam", "Spams the chat", function(state)
+    if state then
+        print("Chat Spam Enabled")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/chat%20spam"))()
+    else
+        print("Chat Spam Disabled")
+    end
+end)
+local Section = Tab:NewSection("Vape V4")
+Section:NewButton("Vape V4", "Loads Vape V4 Script", function(state)
+    if state then
+        print("Vape V4 Loaded")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    else
+        print("Vape V4 Closed")
     end
 end)
 --OTHER--
