@@ -286,7 +286,7 @@ client.setCamProperty=function(prop,value)
     end
 end
 
-if getgenv().SendNotifications == true then
+}) if getgenv().SendNotifications == true then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Etronix Hub",
         Text = "AntiCheat Bypass Enabled!",
