@@ -246,7 +246,6 @@ Section:NewButton("Chat Spam", "Spams the chat", function(state)
         print("Chat Spam Disabled")
     end
 end)
-local Section = Tab:NewSection("Vape V4")
 Section:NewButton("Vape V4", "Loads Vape V4 Script", function(state)
     if state then
         print("Vape V4 Loaded")
