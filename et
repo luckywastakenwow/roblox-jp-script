@@ -79,6 +79,14 @@ Section:NewToggle("AntiCheat Bypass 8", "Try this if bypass 7 doesn't work", fun
         print("AntiCheat Bypass 8 Disabled")
     end
 end)
+Section:NewToggle("AntiCheat Bypass 9", "Good WS + JP Bypass", function(state)
+    if state then
+        print("AntiCheat Bypass 9 Enabled")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%209"))()
+    else
+        print("AntiCheat Bypass 9 Disabled")
+    end
+end)
 Section:NewToggle("AntiKick", "Stops you from getting kicked", function(state)
     if state then
         print("AntiKick Enabled")
