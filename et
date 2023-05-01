@@ -8,7 +8,7 @@ local Indicator
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
 Section:NewToggle("Byfron Killer", "Attempts to delete byfron", function(state)
-    if stae then
+    if state then
         print("Byfron Killer Enabled")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/byfronpass"))()
     else
