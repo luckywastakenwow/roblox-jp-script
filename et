@@ -15,15 +15,7 @@ Section:NewToggle("Byfron Killer", "Attempts to delete byfron", function(state)
         print("Byfron Killer Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass", "Bypasses/stops the AntiCheat", function(state)
-    if state then
-        print("AntiCheat Bypass Enabled")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%201"))()
-    else
-        print("AntiCheat Bypass Disabled")
-    end
-end)
-Section:NewToggle("AntiCheat Bypass 2", "Hooks the AntiCheat", function(state)
+Section:NewToggle("AntiCheat Bypass", "Hooks the AntiCheat", function(state)
     if state then
         print("AntiCheat Bypass 2 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%202"))()
@@ -31,7 +23,7 @@ Section:NewToggle("AntiCheat Bypass 2", "Hooks the AntiCheat", function(state)
         print("AntiCheat Bypass 2 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 3", "Speed AntiCheat Bypass", function(state)
+Section:NewToggle("AntiCheat Bypass 2", "Speed AntiCheat Bypass", function(state)
     if state then
         print("AntiCheat Bypass 3 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%203"))()
@@ -39,7 +31,7 @@ Section:NewToggle("AntiCheat Bypass 3", "Speed AntiCheat Bypass", function(state
         print("AntiCheat Bypass 3 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 4", "WS + JP bypass, works in most games but can also break them", function(state)
+Section:NewToggle("AntiCheat Bypass 3", "WS + JP bypass, works in most games but can also break them", function(state)
     if state then
         print("AntiCheat Bypass 4 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%204"))()
@@ -47,7 +39,7 @@ Section:NewToggle("AntiCheat Bypass 4", "WS + JP bypass, works in most games but
         print("AntiCheat Bypass 4 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 5", "Will cover most problems for bypass 4", function(state)
+Section:NewToggle("AntiCheat Bypass 4", "Will cover most problems for bypass 4", function(state)
     if state then
         print("AntiCheat Bypass 5 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%205"))()
@@ -55,7 +47,7 @@ Section:NewToggle("AntiCheat Bypass 5", "Will cover most problems for bypass 4",
         print("AntiCheat Bypass 5 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 6 (READ DESC)", "Risky way of bypassing speed anticheats", function(state)
+Section:NewToggle("AntiCheat Bypass 5 (READ DESC)", "Risky way of bypassing speed anticheats", function(state)
     if state then
         print("AntiCheat Bypass 6 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%206"))()
@@ -63,7 +55,7 @@ Section:NewToggle("AntiCheat Bypass 6 (READ DESC)", "Risky way of bypassing spee
         print("AntiCheat Bypass 6 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 7", "Spams remote calls to the server", function(state)
+Section:NewToggle("AntiCheat Bypass 6", "Spams remote calls to the server", function(state)
     if state then
         print("AntiCheat Bypass 7 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%207"))()
@@ -71,7 +63,7 @@ Section:NewToggle("AntiCheat Bypass 7", "Spams remote calls to the server", func
         print("AntiCheat Bypass 7 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 8", "Try this if bypass 7 doesn't work", function(state)
+Section:NewToggle("AntiCheat Bypass 7", "Try this if bypass 7 doesn't work", function(state)
     if state then
         print("AntiCheat Bypass 8 Enabled")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%208"))()
@@ -79,7 +71,7 @@ Section:NewToggle("AntiCheat Bypass 8", "Try this if bypass 7 doesn't work", fun
         print("AntiCheat Bypass 8 Disabled")
     end
 end)
-Section:NewToggle("AntiCheat Bypass 9", "Good WS + JP Bypass", function(state)
+Section:NewToggle("AntiCheat Bypass 8", "Good WS + JP Bypass", function(state)
     if state then
         print("AntiCheat Bypass 9 Enabled")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/anti%20bypass%209"))()
