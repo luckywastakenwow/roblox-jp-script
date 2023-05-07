@@ -4,7 +4,13 @@ local StealthMode = true -- If game has an anticheat that checks the logs
 
 local Indicator
 
---TEXT VARIABLES/SIMPLE OBFUSCATION--
+--[[
+
+TEXT VARIABLES
+
+SIMPLE OBFUSCATION
+
+--]]
 local aa = "Byfron Killer Enabled"
 local ab = "Byfron Killer Disabled"
 local ac = "AntiCheat Bypass Enabled"
