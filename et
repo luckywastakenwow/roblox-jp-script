@@ -6,7 +6,7 @@ local Indicator
 
 --[[
 
-TEXT VARIABLES
+PRINT VARIABLES
 
 SIMPLE OBFUSCATION
 
@@ -29,6 +29,7 @@ local ao = "AntiCheat Bypass 7 Enabled"
 local ap = "AntiCheat Bypass 7 Disabled"
 local aq = "AntiCheat Bypass 8 Enabled"
 local ar = "AntiCheat Bypass 8 Disabled"
+
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
