@@ -30,13 +30,22 @@ local ap = "AntiCheat Bypass 7 Disabled"
 local aq = "AntiCheat Bypass 8 Enabled"
 local ar = "AntiCheat Bypass 8 Disabled"
 
+--[[
+
+LOADSTRING VARIABLES
+
+SIMPLE OBFUSCATION
+
+--]]
+local as = "https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/byfronpass"
+
 --MAIN--
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Anti (RECOMMENDED)")
 Section:NewToggle("Byfron Killer", "Attempts to delete byfron", function(state)
     if state then
         print(aa)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/luckywastakenwow/roblox-jp-script/main/byfronpass"))()
+	loadstring(game:HttpGet(as))()
     else
         print(ab)
     end
