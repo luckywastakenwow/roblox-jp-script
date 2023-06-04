@@ -8,11 +8,11 @@ local Tab      = Window:MakeTab({
 Tab:AddParagraph("Warning","Please keep in mind that it is not recommended to use a main account when using this script. The script is potentially detectable and can lead to your account being banned from the game, banned from roblox, or account termination.")
 
 local Section = Tab:AddSection({
-    Name = "Ban"
+    Name = "Ban Player"
 })
 Tab:AddTextbox({
     Name          = "Victim Username",
-    Default       = "Type victim username here",
+    Default       = "Type victim's username here",
     TextDisappear = false,
     Callback      = function(Value)
         print(Value)
