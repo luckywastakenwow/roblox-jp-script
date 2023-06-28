@@ -339,7 +339,7 @@ print(string.format("Anti Chat-Logger has loaded in %s seconds.", tostring(tick(
 if getgenv().SendNotifications == true then
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Etronix Hub",
-        Text = "AntiCheat Bypass 2 Enabled!",
+        Text = "Anti Chat-Logger has been loaded!",
         Icon = "rbxassetid://6238537240",
         Duration = 5,
     })
